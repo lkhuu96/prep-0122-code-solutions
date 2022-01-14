@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+    }
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Complete the HTML here -->
+  <h1>Fast & Furious</h1>
+  <div class="container row">
+    <div class="column">
+      <img src="https://static.wikia.nocookie.net/fastandfurious/images/0/04/The_Fast_and_the_Furious_%28DVD_Cover%29.jpeg/revision/latest?cb=20150501043627">
+      <h3>The Fast and the Furious</h3>
+      <p>Los Angeles police officer Brian O'Conner must decide where his loyalty really lies when he becomes enamored with the street racing world he has been sent undercover to destroy.</p>
+    </div>
+    <div class="column">
+      <img src="https://static.wikia.nocookie.net/fastandfurious/images/0/03/2_Fast_Poster.jpg/revision/latest?cb=20200323094335">
+      <h3>2 Fast 2 Furious</h3>
+      <p>Former cop Brian O'Conner is called upon to bust a dangerous criminal and he recruits the help of a former childhood friend and street racer who has a chance to redeem himself.</p>
+    </div>
+    <div class="column">
+      <img src="https://images.moviesanywhere.com/0d8385198e30c6ac086b643c6a13ab50/0baff3aa-3327-4e33-9546-600bea206acf.jpg">
+      <h3>The Fast and the Furious: Tokyo Drift</h3>
+      <p>A teenager becomes a major competitor in the world of drift racing after moving in with his father in Tokyo to avoid a jail sentence in America.</p>
+    </div>
+  </div>
+
+</body>
+</html>
